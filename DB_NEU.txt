@@ -1,3 +1,30 @@
 data problem；
   1. data embedded into APP, cannot stored separately
   2. access depending on the administrator.
+
+file based data disadvantage:
+  1. lack of separation and isolation
+  2. duplicating needs too much space
+  3. multi parts require multi access
+  4.incompatible formats
+  5. satisfy specific request 
+ 
+DBMS hanle request from APP to use data
+  1. reduce complexity
+  2. provide a level of security
+  3. provide customiize the appearance
+  4. unchanging structure
+  
+ DB:1.logically related data; 2. system catalog
+ DBMS: to operate on DB
+ redundancy represents relationship between two objects in DB
+ 
+ use DB
+  1. control of data redundancy
+  2. data consistency
+  3. more information from data
+  4. share data
+  5. improve integrity
+  6. improve security
+  7. enforcement of standards
+  8. economy of scale
