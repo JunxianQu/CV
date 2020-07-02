@@ -1,3 +1,4 @@
 data problem；
   1. data embedded into APP, cannot stored separately
   2. access depending on the administrator.
+just try
