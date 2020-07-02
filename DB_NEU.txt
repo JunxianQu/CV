@@ -1,3 +1,5 @@
+# overview of DB
+
 data problem；
   1. data embedded into APP, cannot stored separately
   2. access depending on the administrator.
@@ -28,3 +30,41 @@ DBMS hanle request from APP to use data
   6. improve security
   7. enforcement of standards
   8. economy of scale
+  9.balance conflicting requirement
+  10. improved data accessibility
+  11. increase productivity
+  12. improve maintenance through data independence
+  13. increase concurrency
+  14. improve backup
+ 
+cons
+  1.complexity 2. size 3. cost 4. hardware cost
+  5. converting data to DB   6. performance degrade for time increase
+  7. higher impact of a failure
+  
+ role of DB user
+  1. data administrator
+  2. DB administrator
+  3. DB designer
+  4. programmer
+  5. end users
+
+# overview of DB architecture
+hardware architecture 80s-90s download file before use data
+clien-server architecture (default architecture to duilb modern DB)
+  client                            server
+  manage the user interface         accept DB
+  accept & check syntax of input    check authorization
+  process logic                     ensure integrity
+  generate DB request to server     transmit response to client
+  pass response to user             naintain system catalog
+  
+ too many tiers: 1. require considerable resources  2. VIP overhead
+ 
+ 1 tier client -> 2tier application server -> 3tier DB server
+ 
+ thin client pros: 1. economical hardware  2. APP maintenance centralized   3. beter separation
+ 
+ Transaction Processing Monitor : brain of connect server and client
+ 
+ funneling - switch of TPM
