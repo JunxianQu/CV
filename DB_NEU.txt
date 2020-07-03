@@ -68,3 +68,12 @@ clien-server architecture (default architecture to duilb modern DB)
  Transaction Processing Monitor : brain of connect server and client
  
  funneling - switch of TPM
+
+# Structure
+
+conceptual: entities, relationships
+logical: entities, relationships. attributes
+physial: entities, relationships, attributes, data types.
+
+Chen: entities are rectangles, attributes are ovals, relationships are lines with diamonds, cardinalities are numbers, cardinalities are symbols on lines.
+Crow's foot: entities are rectangles, attributes are text in rectangles, relationships are lines, cardinalities are symbols on lines.
