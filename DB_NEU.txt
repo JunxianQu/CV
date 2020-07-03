@@ -77,3 +77,8 @@ physial: entities, relationships, attributes, data types.
 
 Chen: entities are rectangles, attributes are ovals, relationships are lines with diamonds, cardinalities are numbers, cardinalities are symbols on lines.
 Crow's foot: entities are rectangles, attributes are text in rectangles, relationships are lines, cardinalities are symbols on lines.
+
+Subclass( has one or more following properties)
+  non-key attribute >= 1
+  additional relationship with another entity that is logically correct for it and none other >= 1
+  operation that is only applicable to it >= 1
