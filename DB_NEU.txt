@@ -1,4 +1,4 @@
-# overview of DB
+### overview of DB#################################################
 
 data problem；
   1. data embedded into APP, cannot stored separately
@@ -49,7 +49,8 @@ cons
   4. programmer
   5. end users
 
-# overview of DB architecture
+### overview of DB architecture ####################################
+
 hardware architecture 80s-90s download file before use data
 clien-server architecture (default architecture to duilb modern DB)
   client                            server
@@ -68,8 +69,31 @@ clien-server architecture (default architecture to duilb modern DB)
  Transaction Processing Monitor : brain of connect server and client
  
  funneling - switch of TPM
+ 
+### Three-level architecture ################################################################
+The objectives of the three-level architecture is to separate the user's view,
 
-# Structure
+  It allows independent customized user views: Each user should be able to access the same data, but have a different customized view of the data. These should be independent: changes to one view should not affect others.
+  It hides the physical storage details from users: Users should not have to deal with physical database storage details.
+  The database administrator should be able to change the database storage structures without affecting the users’ views.
+ The internal structure of the database should be unaffected by changes to the physical aspects of the storage: For example, a changeover to a new disk.
+  
+  1. External Level (User Views)
+  2. Conceptual Level: The conceptual level is a way of describing what data is stored within the whole database and how the data is inter-related. The conceptual level does not specify how the data is physically stored. Some important facts about this level are:
+    *DBA works at this level.
+    *Describes the structure of all users.
+    *Only DBA can define this level.
+    *Global view of database.
+    *Independent of hardware and software.
+  3. Internal Level: The internal level involves how the database is physically represented on the computer system. It describes how the data is actually stored in the database and on the computer hardware.
+
+Three data schema
+  1. The external schemas describe the different external views of the data and there may be many external schemas for a given database.
+  2. The conceptual schema describes all the data items and relationships between them, together with integrity constraints (later). There is only one conceptual schema per database.
+  3. The internal schema at the lowest level contains definitions of the stored records, the methods of representation, the data fields, and indexes. There is only one internal schema per database.
+
+
+### Structure ###############################
 
 conceptual: entities, relationships
 logical: entities, relationships. attributes
