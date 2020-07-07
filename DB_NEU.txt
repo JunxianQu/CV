@@ -106,3 +106,17 @@ Subclass( has one or more following properties)
   non-key attribute >= 1
   additional relationship with another entity that is logically correct for it and none other >= 1
   operation that is only applicable to it >= 1
+  
+### relational model ######################################
+
+Generally databases are based on one of the three models: the hierarchical model(non-relational model), the network model(non-relational model) or the relational model. relational model is simple--uses the values of the records instead of pointers to relate the records
+
+The relational model mathematics, set theory and predicate logic
+
+three components: structural component (or data structures), manipulative component (or data manipulation), and integrity constraints.
+
+Structural component: entity types and their relationships.
+Manipulative component: a set of operations that are performed on a table or group of tables. 
+Integrity constraints: a set of rules that governs the entity types and their relationships, and thereby, ensures the integrity of database.
+
+A relation comprises of a relation schema and a relation instance. A relation schema (also termed as relation intension) depicts the attributes of the table, and a relation instance (also termed as relation extension) is a two-dimensional table with a time-varying set of tuples.
